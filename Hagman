@@ -70,11 +70,11 @@ void adivinapalabra()
         // Elegir entre una palabra random de las diez (Utilizar un arreglo string)
         std::string plbs[] = {"hardware", "software", "microsoft", "windows", "computadora", "programa", "compilar", "ingeniero", "condicion", "laptop"};
         
-        //Escoger palabra de forma aleatoria o random (Usar las funciones rand() y srand() para seleccionar un n˙mero aleatorio de 0 a 9)
+        //Escoger palabra de forma aleatoria o random (Usar las funciones rand() y srand() para seleccionar un n√∫mero aleatorio de 0 a 9)
          palabra = plbs[rand() % 10];
         std::transform(palabra.begin(), palabra.end(), palabra.begin(), tolower); 
         
-        //Ignora un maximo de elementos, pero como el maximo no est‡ especificado, este imprime todos.
+        //Ignora un maximo de elementos, pero como el maximo no est√† especificado, este imprime todos.
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
        //convertir letras de caracteres en rayas 
@@ -130,7 +130,7 @@ void adivinapalabra()
             //Buscar si una de los caracteres se encuentra en la palabra, mientras no sea el caracter buscado que imprima 
             i = palabra.find(caracter);
             while (palabra.find(caracter, i) != std::string::npos) //Ejecuta eso hasta el final.
-			//npos: Este valor, cuando se usa como el valor para un par·metro len (o sublen) en las funciones miembro de la cadena, significa "hasta el final de la cadena".
+			//npos: Este valor, cuando se usa como el valor para un par√°metro len (o sublen) en las funciones miembro de la cadena, significa "hasta el final de la cadena".
 			{
                 respcorrecta[palabra.find(caracter, i)] = caracter; //Por cada caracter que sea igual al de la palabra a y se aumenta una vez, hasta completar el numero de caracter que tiene la palabra.
                 i++;
