@@ -1,4 +1,4 @@
-#include  <iostream>
+#include <iostream>
 
 using namespace std;
 
@@ -8,21 +8,18 @@ int main ()
     cout  << " Introduzce tu radio: ";
 
        //Nombrar cada variables
-         double radio = 0 ;
-         
-    cin >> radio;
+         double radio = 0 ; 
+         cin >> radio;
     
-    //Buscar el area
+    //Realizar operación para el area
     double area = 3.14 * (radio * radio) ;
     cout << endl << " El area del circulo es: " << area << endl << endl;
 
-    //Realizar la longitud
+    //Realizar operación para la longitud
     double longitud = 2 * 3.14 * radio;
-     cout << " La longitud del circulo es: " << longitud << endl << endl;
-     
-     cout << endl << " Gracias por calcular con nosotros " << endl;
+    
+    cout << " La longitud del circulo es: " << longitud << endl << endl;
+    cout << endl << " Gracias por utilizar!" << endl;
 
     return 0;
     }
-    
-    
