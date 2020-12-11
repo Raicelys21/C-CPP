@@ -1,11 +1,10 @@
 #include<iostream>
-
 using namespace std;
 
 int main()
 {
-	double variable = "Toyota";
-    int * puntero1 = &variable;
+	string variable = "Toyota";
+    string * puntero1 = &variable;
     
     //Variable tipo int 
         cout << "Valor de la variable: " << variable << endl; 
@@ -21,10 +20,10 @@ int main()
         cout << "Cambio de valor: " << variable << endl; 
     
     //Segundo puntero
+    string puntero2;
+    puntero2 = "Sonata";
     *puntero1 = puntero2;
-    *puntero2 = "Sonata"
+    
     //Cambiar variable con segundo puntero
-    cout << "Cambio de variable con segundo puntero " << numero << endl; 
-
-
+    cout << "Cambio de variable con segundo puntero: " << puntero1 << endl; 
 }
