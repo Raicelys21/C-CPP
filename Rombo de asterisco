@@ -1,11 +1,11 @@
 #include <iostream>  
-
 using namespace std;  
+
 int main()  
 {  
-// Imprimir asteriscos  
-int asterisco = 1;  
-int espacio = 5; 
+       // Especificaciones
+       int asterisco = 1;  
+       int espacio = 10; //Aquí ingresas el grande de tu rombo deseado.
 
 for (int r = 0; r < 11; r++)  
 {  
@@ -29,11 +29,11 @@ for (int r = 0; r < 11; r++)
             {  
                asterisco -= 2;  
                espacio += 1; 
-            }  
-            
-cout << endl;  
-
-}  
+            }              
+          cout << endl;  
+    }  
+    return 0;  
+} 
 
 return 0;  
 } 
