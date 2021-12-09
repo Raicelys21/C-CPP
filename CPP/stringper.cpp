@@ -18,7 +18,7 @@ void permute(string a, int l, int r)
  
 int main()
 {
-  string str = "GRUPO3";
+  string str = "SOL";
   int n = str.size();
   permute(str, 0, n - 1);
   return 0;
