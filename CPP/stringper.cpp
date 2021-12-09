@@ -9,9 +9,9 @@ void permute(string a, int l, int r)
   {
     for (int i = l; i <= r; i++)
     {
-      swap(a[l], a[i]); // Cambios
-      permute(a, l + 1, r); // Recursión
-      swap(a[l], a[i]); // Retroceso
+      swap(a[l], a[i]); 
+      permute(a, l + 1, r);
+      swap(a[l], a[i]);
     }
   }
 }
